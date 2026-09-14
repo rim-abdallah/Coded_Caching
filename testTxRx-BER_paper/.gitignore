@@ -1,0 +1,15 @@
+*.exe
+*.o
+*.so
+*.dll
+*.csv
+env_real*
+env_zipf*
+testTxRx-BER_paper/repository/
+cache/MakeCache
+create_request
+environment/Environment
+environment/environment_file
+environment/t_no_cache.txt
+testTxRx/t_no_cache.txt
+testTxRx/.run.sh.swp

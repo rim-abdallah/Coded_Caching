@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=$(prefix}
+libdir=$(prefix}/lib
+includedir=$(prefix}/include
+
+Name: caching
+Description: caching is a C++ library developed for test the caching on GNU Radio
+Version: 1.0.0
+Requires.private: /usr/lib/libgsl.so
+Libs: -L${libdir} -lcaching -lm
+Libs.private: /usr/lib/libgslcblas.so
+Cflags: -I${includedir} -O3 -Wall -std=c++11 -g

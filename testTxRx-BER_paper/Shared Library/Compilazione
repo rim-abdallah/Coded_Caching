@@ -1,0 +1,16 @@
+//GIUSEPPE (sviluppo makefile)
+Per ottenere i file .o:
+g++ -O3 -Wall -std=c++11 -g -lgsl -lgslcblas -lm  -c "/home/joker/Desktop/Codice Commentato/Blocks/Source_Block/hgcc.cpp" -o obj/Debug/hgcc.o
+
+Un volta ottenuti i file .o per ogni ifle .cpp:
+g++ -o eseguibile CheckFunction.o CodingDecodingData.o ConflictGraph.o DecodingInput.o EnvironmentSetup.o grasp.o heapSort.o hgcc.o main.o psdes.o randomHandler.o randomUniform.o utilityForTesting.o libgsl.a libgslcblas.a
+
+Per ottenere il file eseguibile:
+g++ -o eseguibile -O3 -Wall -std=c++11 -g -lgsl -lgslcblas -lm  main.cpp hgcc.cpp etc etc
+
+
+//DARIO (usare makefile)
+
+1. open terminal and go to dir
+2. make                    => compile the whole program
+3. make lib                => create the library and copy it in /usr/local/lib
